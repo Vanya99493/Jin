@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/js.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- -------------------------------------- -->
+        <div class="black" id="black"></div>
+        <!-- -------------------------------------- -->
+
+
+        <div class="start" id="start">
+            <div class="start-button" id="start-button">Начать</div>
+        </div>
+
+
+        <div class="intro intro-z-ind" id="intro">
+            <div class="intro__hint" id="intro-hint">Нажми на лампу</div>
+            <img src="img/lampa.png" alt="" class="intro__img" id="intro-anim">
+        </div>
+
+
+        <div class="smoke smoke-z-ind" id="smoke">
+            <img src="img/left-smoke.png" alt="" class="smoke__left-img" id="smoke-left">
+            <img src="img/right-smoke.png" alt="" class="smoke__right-img" id="smoke-right">
+        </div>
+
+
+        <div class="smoke-jin smoke-jin-z-ind" id="smoke-jin">
+            <img src="img/smoke.png" alt="" class="smoke-jin__smoke" id="smoke-jin__smoke-anim">
+        </div>
+        <div class="jin-1 jin-1-z-ind" id="jin-1">
+            <img src="img/jin-privet-previu.png" alt="" class="jin-1-img jin-img">
+        </div>
+        <div class="jin-2 jin-1-z-ind" id="jin-2">
+            <img src="img/jin-pover.png" alt="" class="jin-2-img jin-img">
+        </div>
+        <div class="jin-3 jin-1-z-ind" id="jin-3">
+            <img src="img/lin-posol.png" alt="" class="jin-3-img jin-img">
+        </div>
+        <div class="jin-4 jin-1-z-ind" id="jin-4">
+            <img src="img/jin-wtf.png" alt="" class="jin-4-img jin-img">
+        </div>
+
+
+        <div class="cloud cloud-z-ind" id="cloud">
+            <img src="img/cloud.png" alt="" class="cloud-img" id="cloud-img">
+        </div>
+
+
+        <div class="hello-text hello-text-z-ind" id="hello-text-section">
+            <div class="hello-text__text" id="dialog-with-jin">У-у-у-у... Кто посмел меня разбудить?</div>
+            <div class="hello-text__button" id="button-skip">Продолжить</div>
+        </div>
+
+
+        <div class="registration registration-z-ind" id="registration">
+            <div class="registration__block">
+                <div class="registration__column">
+                    <div class="registration__head">
+                        Введите имя
+                    </div>
+                    <div class="registration__inp">
+                        <input placeholder="введите своё имя" type="text" class="registration__input" id="registration-input">
+                    </div>
+                    <div class="registration__but">
+                        <button class="registration__button" id="registration-button">
+                            Продолжить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Убери класс, который указан в кавычках что-бы пропустить вступление и начать сразу с игры) -->
+        <div class="game-block        game-block-z-ind      " id="game-block"> <!--game-block-z-ind-->
+            <div class="container">
+                <div class="game__column">
+                    <div class="game__place">
+                        <div class="game__rules game__rules-z-ind">
+                            <h2>Правила</h2>
+                            <p class="game__rules-p">1. Ваша задача розгадать загадку джина и вписать её в строку ответа.</p>
+                            <p class="game__rules-p" id="game-rules-2-child">2. У вас будет всего 3 попытки.</p>
+                            <p class="game__rules-p game__rules-important">3. Ответы нужно писать с маленькой буквы!!!</p>
+                            <p class="game__rules-p">4. Всё ясно? Тогда нажмите на кнопку ИГРАТЬ.</p>
+                            <p class="game__rules-p">5. На случий если забудете правила, нажмёте на кнопку ПРАВИЛА.</p>
+                        </div>
+                    </div>
+                    <div class="game__row">
+                        <div class="game__jin-head">
+                            <div class="game__jin-head-container">
+                            </div>
+                        </div>
+                        <div class="game__jin-text">
+                            <div class="game__jin-text-container" id="jin-text-for-game">
+                                Ознакомся с правилами! Там всё написано, так-что я не буду роспинатся...
+                            </div>
+                        </div>
+                        <div class="game__button">
+                            <button class="game__button-but" id="game-button">играть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game__game game__game-z-ind" id="game-game">
+            <div class="game__container">
+                <div class="game__colums game__colums-for-game" id="game-center">
+
+
+                    <div class="game__load-start">
+                        <div class="game__load-column">
+                            <div class="game__load-what">Вы хотите начать?</div>
+                            <div class="game__load-button" id="button-load-start">Старт</div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="game__mystery" id="game-mystery"></div>
+                    <div class="game__row-2">
+                        <input type="text" placeholder="введите ответ" class="game__answer" id="game-answer"></input>
+                        <button class="game__check" id="game-check">Отправить</button>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="if-you-win-1 z-ind" id="result">
+            <div class="if-you-win-1-1" id="result-text"></div>
+            <div class="if-you-win-button" id="if-you-win-button">Продолжить</div>
+        </div>
+
+
+        <!-- ********************************************************************** -->
+        <div class="if-you-lose-1 z-ind" id="if-you-lose-1">
+            <div class="if-you-lose-1-1" id="inner-you-lose"></div>
+        </div>
+        <!-- ********************************************************************** -->
+
+
+        <div class="jin-kill-you  z-ind      " id="jin-kill-you">     <!-- z-ind -->
+            <div class="jin-k-y__text-r">
+                <div class="jin-k-y__text">Я же говорил у тебя ничего не получится. Но мне настолько осточертело сидеть в этой лампе что я готов дать тебе второй шанс, но уже только с одной попыткой! Согласен?</div>
+            </div>
+            <img src="img/jin-exercice.png" alt="" class="jin-k-y__jin">
+            <img src="img/cloud.png" alt="" class="jin-k-y__cloud">
+            <button class="jin-k-y__but" id="jin-k-y-but">Да</button>
+        </div>
+
+
+        <div class="final   z-ind   " id="final">    <!-- z-ind -->
+            <div class="final__jin">
+                <img src="img/lin-posol.png" alt="" class="final__jin-img" id="final-jin">
+            </div>
+            <div class="final__cloud">
+                <img src="img/cloud.png" alt="" class="final__cloud-img">
+            </div>
+            <div class="final__text" id="final-text">
+                <div class="final__jin-textt" id="final-jin-textt">Наконецто ты выиграл меня и проклятие снято! Наконецто я могу покинуть эту лампу!</div> 
+                <div class="final__but" id="final-but">А как же мои три желания?</div>
+            </div>
+        </div>
+
+
+        <div class="jin-nado disp-none" id="jin-nado">
+            <img src="img/jin-exercice.png" alt="" class="jin-k-y__jin">
+        </div>
+
+
+        <!-- ----------------------- -->
+        <div class="yellow z-ind" id="yellow"></div>
+        <!-- ----------------------- -->
+
+
+        <div class="final-intro z-ind" id="final-intro">
+            <div class="final-intro__container">
+                <div class="final-intro__text">Теперь вы джин... Вы обладаете невероятной мощю, но волшебная лампа сдержует всю эту мощь и не даёт вам телепортироватся наружу. Вам предстоит ждать следущего человека для того что-бы обмануть его... Или нет... Но вдруг вы находите список с ответами на вопросы джина: <span class="list"><span class="punkts">1.</span> Тот, кто много говорит; <span class="punkts">2.</span> Стена; <span class="punkts">3.</span> Последний; <span class="punkts">4.</span> 9; <span class="punkts">5.</span> "Резервный вопрос"...</span> После того как вы прочитали это, вы дали себе слово что когда-нибудь найдёте бывшого джина и отомстите за обман... <span class="gg">Это всё! Поздравляю с прохождениям!!!</span></div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
